@@ -17,14 +17,14 @@
           <!-- Product Images -->
           <div class="t-space-y-4">
             {% if product.featured_image %}
-              <div class="t-carousel t-rounded-box">
+              <div class="t-carousel t-w-full">
                 <div class="t-carousel-item t-w-full">
                   <img
                     src="{{ product.featured_image | image_url: width: 600 }}"
                     alt="{{ product.title }}"
                     width="600"
                     height="600"
-                    class="t-w-full t-object-cover t-rounded-box"
+                    class="t-w-full t-object-cover"
                   >
                 </div>
                 {% for image in product.images offset: 1 limit: 3 %}
@@ -34,11 +34,21 @@
                       alt="{{ product.title }}"
                       width="600"
                       height="600"
-                      class="t-w-full t-object-cover t-rounded-box"
+                      class="t-w-full t-object-cover"
                     >
                   </div>
                 {% endfor %}
               </div>
+              {% if product.images.size > 1 %}
+                <div class="t-flex t-justify-center t-w-full t-py-2 t-gap-2">
+                  <a href="#item1" class="t-btn t-btn-xs">1</a>
+                  {% for image in product.images offset: 1 limit: 3 %}
+                    <a href="#item{{ forloop.index | plus: 1 }}" class="t-btn t-btn-xs">
+                      {{- forloop.index | plus: 1 -}}
+                    </a>
+                  {% endfor %}
+                </div>
+              {% endif %}
             {% endif %}
 
             <!-- Thumbnail indicators -->
@@ -179,10 +189,10 @@
     <div class="d-card t-bg-base-100 t-shadow-xl">
       <div class="t-card-body">
         <div class="t-tabs t-tabs-boxed t-mb-6">
-          <a class="t-tab t-tab-active" onclick="openTab('description')">Description</a>
-          <a class="t-tab" onclick="openTab('specifications')">Specifications</a>
-          <a class="t-tab" onclick="openTab('reviews')">Reviews</a>
-          <a class="t-tab" onclick="openTab('shipping')">Shipping</a>
+          <a class="t-tab t-tab-active" data-tab="description">Description</a>
+          <a class="t-tab" data-tab="specifications">Specifications</a>
+          <a class="t-tab" data-tab="reviews">Reviews</a>
+          <a class="t-tab" data-tab="shipping">Shipping</a>
         </div>
 
         <!-- Tab Content -->
@@ -272,21 +282,33 @@
 </div>
 
 <script>
-  function openTab(tabName) {
-    // Hide all tab content
-    const contents = document.querySelectorAll('.t-tab-content');
-    contents.forEach((content) => content.classList.add('t-hidden'));
-
-    // Remove active class from all tabs
+  document.addEventListener('DOMContentLoaded', function () {
+    // Tab functionality
     const tabs = document.querySelectorAll('.t-tab');
-    tabs.forEach((tab) => tab.classList.remove('t-tab-active'));
+    const tabContents = document.querySelectorAll('.t-tab-content');
 
-    // Show selected tab content
-    document.getElementById(tabName).classList.remove('t-hidden');
+    tabs.forEach((tab) => {
+      tab.addEventListener('click', function (e) {
+        e.preventDefault();
 
-    // Add active class to clicked tab
-    event.target.classList.add('t-tab-active');
-  }
+        // Remove active class from all tabs
+        tabs.forEach((t) => t.classList.remove('t-tab-active'));
+
+        // Hide all tab content
+        tabContents.forEach((content) => content.classList.add('t-hidden'));
+
+        // Add active class to clicked tab
+        this.classList.add('t-tab-active');
+
+        // Show corresponding tab content
+        const tabName = this.getAttribute('data-tab');
+        const targetContent = document.getElementById(tabName);
+        if (targetContent) {
+          targetContent.classList.remove('t-hidden');
+        }
+      });
+    });
+  });
 </script>
 
 {% schema %}
