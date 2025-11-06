@@ -1,0 +1,63 @@
+<!doctype html>
+<html class="js" lang="{{ request.locale.iso_code }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="">
+    <link rel="canonical" href="{{ canonical_url }}">
+
+    <title>
+      DaisyUI Test -
+      {{ shop.name }}
+    </title>
+
+    {{ 'base.css' | asset_url | stylesheet_tag }}
+    {{ 'output.css' | asset_url | stylesheet_tag }}
+  </head>
+
+  <body>
+    <div class="t-container t-mx-auto t-p-8">
+      <h1 class="t-text-4xl t-font-bold t-mb-8">DaisyUI Test Page</h1>
+
+      <!-- DaisyUI Components Test -->
+      <div class="t-grid t-grid-cols-1 t-md-grid-cols-2 t-lg-grid-cols-3 t-gap-6">
+        <!-- Button Test -->
+        <div class="d-card t-p-6">
+          <h2 class="t-text-xl t-font-semibold t-mb-4">Buttons</h2>
+          <div class="t-space-y-2">
+            <button class="d-btn d-btn-primary t-mr-2">Primary Button</button>
+            <button class="d-btn d-btn-secondary">Secondary Button</button>
+          </div>
+        </div>
+
+        <!-- Input Test -->
+        <div class="d-card t-p-6">
+          <h2 class="t-text-xl t-font-semibold t-mb-4">Input</h2>
+          <div class="t-space-y-2">
+            <input type="text" placeholder="Test input" class="d-input t-w-full">
+          </div>
+        </div>
+
+        <!-- Alert Test -->
+        <div class="d-card t-p-6">
+          <h2 class="t-text-xl t-font-semibold t-mb-4">Alert</h2>
+          <div class="d-alert d-alert-success">
+            <span>DaisyUI is working! 🎉</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tailwind Classes Test -->
+      <div class="t-mt-8 t-p-6 t-bg-gray-100 t-rounded-lg">
+        <h2 class="t-text-2xl t-font-bold t-mb-4">Tailwind Classes (t- prefix)</h2>
+        <p class="t-text-lg t-mb-4">These should work with the t- prefix:</p>
+        <div class="t-flex t-space-x-4">
+          <div class="t-bg-blue-500 t-text-white t-p-4 t-rounded">Blue Box</div>
+          <div class="t-bg-green-500 t-text-white t-p-4 t-rounded">Green Box</div>
+          <div class="t-bg-purple-500 t-text-white t-p-4 t-rounded">Purple Box</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "aadigital_theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "postcss.config.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp css",
+    "watch": "gulp watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "daisyui": "^5.4.5",
+    "gulp": "^5.0.1",
+    "gulp-postcss": "^10.0.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.16"
+  }
+}
