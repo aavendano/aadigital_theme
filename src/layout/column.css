@@ -1,15 +1,15 @@
-.column {
+.a\:column {
     @apply a:px-4 a:w-full;
 }
 
-.column.is-3 {
+.a\:column.is-3 {
     @apply a:w-1/4;
 }
 
-.column.is-6 {
+.a\:column.is-6 {
     @apply a:w-1/2;
 }
 
-.column.is-fullwidth {
+.a\:column.is-fullwidth {
     @apply a:w-full;
 }

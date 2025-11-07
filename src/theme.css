@@ -1,62 +1,5 @@
 @import "tailwindcss" prefix(a);
 @plugin '@tailwindcss/typography';
-@import './layout/container.css';
-@import './layout/section.css';
-@import './layout/hero.css';
-@import './layout/footer.css';
-@import './layout/tile.css';
-@import './layout/columns.css';
-@import './layout/column.css';
-
-/* Elements */
-@import './elements/box.css';
-@import './elements/button.css';
-@import './elements/content.css';
-@import './elements/delete.css';
-@import './elements/icon.css';
-@import './elements/image.css';
-@import './elements/notification.css';
-@import './elements/progress.css';
-@import './elements/table.css';
-@import './elements/tag.css';
-@import './elements/input.css';
-@import './elements/textarea.css';
-@import './elements/select.css';
-@import './elements/checkbox.css';
-@import './elements/radio.css';
-@import './elements/field.css';
-@import './elements/control.css';
-@import './elements/label.css';
-@import './elements/help.css';
-
-
-/* Typography */
-@import './typography/title.css';
-@import './typography/subtitle.css';
-
-/* Components */
-@import './components/breadcrumb.css';
-@import './components/card.css';
-@import './components/dropdown.css';
-@import './components/level.css';
-@import './components/media.css';
-@import './components/menu.css';
-@import './components/message.css';
-@import './components/modal.css';
-@import './components/navbar.css';
-@import './components/pagination.css';
-@import './components/panel.css';
-@import './components/tabs.css';
-
-/* Helpers */
-@import './helpers/is-hidden.css';
-@import './helpers/is-marginless.css';
-@import './helpers/is-paddingless.css';
-@import './helpers/is-clipped.css';
-@import './helpers/is-overlay.css';
-@import './helpers/is-pulled-left-right.css';
-@import './helpers/has-text.css';
-@import './helpers/has-background.css';
 
 @plugin "daisyui";
 @plugin "daisyui/theme" {
@@ -93,8 +36,71 @@
     --depth: 1;
     --noise: 1;
 }
+
+@import './layout/container.css' prefix(a);
+@import './layout/section.css';
+@import './layout/hero.css';
+@import './layout/footer.css';
+@import './layout/tile.css';
+@import './layout/columns.css';
+@import './layout/column.css';
+
+/* Elements */
+@import './elements/block.css';
+@import './elements/box.css';
+@import './elements/button.css';
+@import './elements/content.css';
+@import './elements/delete.css';
+@import './elements/icon.css';
+@import './elements/image.css';
+@import './elements/notification.css';
+@import './elements/progress.css';
+@import './elements/table.css';
+@import './elements/tag.css';
+@import './elements/input.css';
+@import './elements/textarea.css';
+@import './elements/select.css';
+@import './elements/checkbox.css';
+@import './elements/radio.css';
+@import './elements/field.css';
+@import './elements/control.css';
+@import './elements/label.css';
+@import './elements/help.css';
+
+
+/* Typography */
+@import './typography/title.css' prefix(a);
+@import './typography/subtitle.css' prefix(a);
+
+/* Components */
+@import './components/breadcrumb.css';
+@import './components/card.css';
+@import './components/dropdown.css';
+@import './components/level.css';
+@import './components/media.css';
+@import './components/menu.css';
+@import './components/message.css';
+@import './components/modal.css';
+@import './components/navbar.css';
+@import './components/pagination.css';
+@import './components/panel.css';
+@import './components/tabs.css';
+
+/* Helpers */
+@import './helpers/is-hidden.css';
+@import './helpers/is-marginless.css';
+@import './helpers/is-paddingless.css';
+@import './helpers/is-clipped.css';
+@import './helpers/is-overlay.css';
+@import './helpers/is-pulled-left-right.css';
+@import './helpers/has-text.css';
+@import './helpers/has-background.css';
+
 /* Escanea solo archivos específicos */
 @source "sections/**/*.liquid";
 @source "templates/**/*.liquid";
 @source "snippets/**/*.liquid";
-@source "src/safelist.html"; /* Tu archivo de referencia */
+@source "src/safelist.html"; 
+/* Tu archivo de referencia */
+@source "./{layout,sections,snippets,templates,blocks}/**/*.liquid", "./assets/**/*.js",
+     "./src/safelist.js", "test.html";

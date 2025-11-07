@@ -1,7 +1,7 @@
-.button.is-primary {
-    @apply a:btn a:btn-primary;
+.a\:button {
+    @apply a:btn;
 }
 
-.button.is-large {
+.a\:button.is-large {
     @apply a:btn-lg;
 }

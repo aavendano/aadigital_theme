@@ -529,7 +529,7 @@
     }
   }
 }
-.container {
+.a\:container {
   width: 100%;
   @media (width >= 40rem) {
     max-width: 40rem;
@@ -563,25 +563,29 @@
   display: flex;
   flex-wrap: wrap;
 }
-.columns {
+.a\:columns {
   margin-inline: calc(var(--a-spacing) * -4);
   display: flex;
   flex-wrap: wrap;
 }
-.column {
+.a\:column {
   width: 100%;
   padding-inline: calc(var(--a-spacing) * 4);
 }
-.column.is-3 {
+.a\:column.is-3 {
   width: calc(1/4 * 100%);
 }
-.column.is-6 {
+.a\:column.is-6 {
   width: calc(1/2 * 100%);
 }
-.column.is-fullwidth {
+.a\:column.is-fullwidth {
   width: 100%;
 }
-.box {
+.a\:brick:not(:last-child) {
+  margin-bottom: calc(var(--a-spacing) * 6);
+  display: block;
+}
+.a\:box {
   @layer daisyui.component {
     position: relative;
     display: flex;
@@ -634,7 +638,7 @@
   --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
   box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
 }
-.button.is-primary {
+.a\:button {
   :where(&) {
     @layer daisyui.component {
       width: unset;
@@ -796,19 +800,15 @@
       }
     }
   }
-  @layer daisyui.modifier.color {
-    --btn-color: var(--color-primary);
-    --btn-fg: var(--color-primary-content);
-  }
 }
-.button.is-large {
+.a\:button.is-large {
   @layer daisyui.modifier {
     --fontsize: 1.125rem;
     --btn-p: 1.25rem;
     --size: calc(var(--size-field, 0.25rem) * 12);
   }
 }
-.content {
+.a\:content {
   color: var(--tw-prose-body);
   max-width: 65ch;
   :where(p):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
@@ -1657,7 +1657,7 @@
   align-items: center;
   justify-content: center;
 }
-.image {
+.a\:image {
   width: 100%;
   overflow: hidden;
   border-radius: var(--a-radius-xl);
@@ -2214,7 +2214,7 @@
   border-width: 1px;
   border-color: var(--color-base-300);
 }
-.checkbox {
+.a\:checkbox {
   @layer daisyui.component {
     border: var(--border) solid var(--input-color, var(--color-base-content));
     @supports (color: color-mix(in lab, red, red)) {
@@ -2367,7 +2367,7 @@
 .field {
   margin-bottom: calc(var(--a-spacing) * 4);
 }
-.control {
+.a\:control {
   position: relative;
 }
 .label {
@@ -2415,7 +2415,7 @@
   color: var(--color-base-content);
   opacity: 60%;
 }
-.title {
+.a\:title {
   font-size: var(--a-text-3xl);
   line-height: var(--tw-leading, var(--a-text-3xl--line-height));
   --tw-font-weight: var(--a-font-weight-bold);
@@ -2425,7 +2425,7 @@
     line-height: var(--tw-leading, var(--a-text-5xl--line-height));
   }
 }
-.subtitle {
+.a\:subtitle {
   font-size: var(--a-text-xl);
   line-height: var(--tw-leading, var(--a-text-xl--line-height));
   --tw-font-weight: var(--a-font-weight-semibold);
@@ -2435,7 +2435,7 @@
     line-height: var(--tw-leading, var(--a-text-3xl--line-height));
   }
 }
-.card {
+.a\:card {
   @layer daisyui.component {
     position: relative;
     display: flex;

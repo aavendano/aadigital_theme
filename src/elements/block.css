@@ -1,0 +1,3 @@
+.a\:brick:not(:last-child) {
+     @apply a:block a:mb-6;
+}

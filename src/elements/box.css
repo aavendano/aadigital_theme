@@ -1,3 +1,3 @@
-.box {
+.a\:box {
     @apply a:card a:shadow-lg a:rounded-xl a:p-6;
 }
