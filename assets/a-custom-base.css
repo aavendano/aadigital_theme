@@ -1661,7 +1661,7 @@
   align-items: center;
   justify-content: center;
 }
-.image {
+.a\:image {
   width: 100%;
   overflow: hidden;
   border-radius: var(--a-radius-xl);
