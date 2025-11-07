@@ -391,6 +391,9 @@
       }
     }
   }
+  .a\:block-last-child {
+    margin-bottom: calc(var(--a-spacing) * 6);
+  }
   .a\:card-body {
     @layer daisyui.component {
       display: flex;
