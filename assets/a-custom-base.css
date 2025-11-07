@@ -446,6 +446,12 @@
       font-weight: 600;
     }
   }
+  .a\:block {
+    display: block;
+  }
+  .a\:block {
+    display: block;
+  }
   .a\:w-96 {
     width: calc(var(--a-spacing) * 96);
   }
