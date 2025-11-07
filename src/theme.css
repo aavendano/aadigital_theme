@@ -1,0 +1,38 @@
+@import "tailwindcss" prefix(a);
+
+@plugin "daisyui";
+
+@plugin "daisyui/theme" {
+    name: "playlovetoys";
+    default: true;
+    prefersdark: false;
+    color-scheme: "light";
+    --color-base-100: oklch(100% 0 0);
+    --color-base-200: oklch(98% 0 0);
+    --color-base-300: oklch(95% 0 0);
+    --color-base-content: oklch(21% 0.006 285.885);
+    --color-primary: hsl(268, 41%, 33%);
+    --color-primary-content: oklch(100% 0 0);
+    --color-secondary: #F4436C;
+    --color-secondary-content: oklch(94% 0.028 342.258);
+    --color-accent: #0C7489;
+    --color-accent-content: oklch(100% 0 0);
+    --color-neutral: #B4B4B4;
+    --color-neutral-content: oklch(21% 0.006 285.885);
+    --color-info: hsl(189, 64%, 44%);
+    --color-info-content: #022E35;
+    --color-success: #8E76A1;
+    --color-success-content: #321F4C;
+    --color-warning: oklch(93% 0.034 272.788);
+    --color-warning-content: oklch(21% 0.006 285.885);
+    --color-error: #F78FA7;
+    --color-error-content: hsl(266, 55%, 5%);
+    --radius-selector: 1rem;
+    --radius-field: 1rem;
+    --radius-box: 0.25rem;
+    --size-selector: 0.28125rem;
+    --size-field: 0.28125rem;
+    --border: 2px;
+    --depth: 1;
+    --noise: 1;
+}
