@@ -466,6 +466,14 @@
   .a\:text-center {
     text-align: center;
   }
+  .a\:is-size-1-desktop {
+    font-size: var(--a-text-5xl);
+    line-height: var(--tw-leading, var(--a-text-5xl--line-height));
+    @media (width >= 48rem) {
+      font-size: var(--a-text-6xl);
+      line-height: var(--tw-leading, var(--a-text-6xl--line-height));
+    }
+  }
   .a\:text-lg {
     font-size: var(--a-text-lg);
     line-height: var(--tw-leading, var(--a-text-lg--line-height));
