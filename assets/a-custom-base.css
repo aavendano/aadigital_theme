@@ -572,13 +572,13 @@
   width: 100%;
   padding-inline: calc(var(--a-spacing) * 4);
 }
-.column.is-3 {
+.a\:column.is-3 {
   width: calc(1/4 * 100%);
 }
-.column.is-6 {
+.a\:column.is-6 {
   width: calc(1/2 * 100%);
 }
-.column.is-fullwidth {
+.a\:column.is-fullwidth {
   width: 100%;
 }
 .a\:brick:not(:last-child) {
