@@ -15,9 +15,15 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "test_wh7FBi": {
+      "type": "test",
+      "name": "Test Section",
+      "settings": {}
     }
   },
   "order": [
-    "main"
+    "main",
+    "test_wh7FBi"
   ]
 }
