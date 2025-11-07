@@ -2435,7 +2435,7 @@
     line-height: var(--tw-leading, var(--a-text-3xl--line-height));
   }
 }
-.card {
+.a\:card {
   @layer daisyui.component {
     position: relative;
     display: flex;
