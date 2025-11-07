@@ -2218,7 +2218,7 @@
   border-width: 1px;
   border-color: var(--color-base-300);
 }
-.checkbox {
+.a\:checkbox {
   @layer daisyui.component {
     border: var(--border) solid var(--input-color, var(--color-base-content));
     @supports (color: color-mix(in lab, red, red)) {
