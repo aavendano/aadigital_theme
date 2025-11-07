@@ -800,10 +800,6 @@
       }
     }
   }
-  @layer daisyui.modifier.color {
-    --btn-color: var(--color-primary);
-    --btn-fg: var(--color-primary-content);
-  }
 }
 .a\:button.is-large {
   @layer daisyui.modifier {
