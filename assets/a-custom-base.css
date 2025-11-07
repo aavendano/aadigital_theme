@@ -581,7 +581,7 @@
 .column.is-fullwidth {
   width: 100%;
 }
-.box {
+.a\:box {
   @layer daisyui.component {
     position: relative;
     display: flex;
