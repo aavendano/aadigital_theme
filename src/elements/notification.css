@@ -1,0 +1,3 @@
+.notification.has-background-link-light {
+    @apply a:alert a:alert-info;
+}

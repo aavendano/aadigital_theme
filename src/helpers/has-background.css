@@ -1,0 +1,23 @@
+.has-background-primary {
+    @apply a:bg-primary;
+}
+
+.has-background-secondary {
+    @apply a:bg-secondary;
+}
+
+.has-background-accent {
+    @apply a:bg-accent;
+}
+
+.has-background-success {
+    @apply a:bg-success;
+}
+
+.has-background-warning {
+    @apply a:bg-warning;
+}
+
+.has-background-error {
+    @apply a:bg-error;
+}

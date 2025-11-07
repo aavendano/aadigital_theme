@@ -1,0 +1,3 @@
+.a\:image {
+    @apply a:w-full a:overflow-hidden a:rounded-xl;
+}

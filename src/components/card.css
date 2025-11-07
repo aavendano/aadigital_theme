@@ -1,0 +1,3 @@
+.a\:card {
+    @apply a:card a:bg-base-100 a:shadow-xl;
+}

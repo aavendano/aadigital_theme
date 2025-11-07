@@ -1,0 +1,3 @@
+.a\:subtitle {
+    @apply a:text-xl a:md:text-3xl a:font-semibold;
+}

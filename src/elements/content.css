@@ -1,0 +1,3 @@
+.a\:content {
+    @apply a:prose a:prose-sm a:max-w-none;
+}

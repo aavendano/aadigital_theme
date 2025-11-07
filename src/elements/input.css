@@ -1,0 +1,3 @@
+.input {
+    @apply a:input a:border a:border-base-300;
+}

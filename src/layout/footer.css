@@ -1,0 +1,3 @@
+.footer {
+    @apply a:py-6 a:bg-base-200 a:text-base-content;
+}

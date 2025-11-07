@@ -1,0 +1,7 @@
+.a\:button {
+    @apply a:btn;
+}
+
+.a\:button.is-large {
+    @apply a:btn-lg;
+}

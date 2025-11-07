@@ -1,0 +1,3 @@
+.help {
+    @apply a:text-sm a:text-base-content a:opacity-60;
+}
