@@ -1,0 +1,3 @@
+.columns {
+    @apply a:flex a:flex-wrap a:-mx-4;
+}

@@ -1,0 +1,7 @@
+.button.is-primary {
+    @apply a:btn a:btn-primary;
+}
+
+.button.is-large {
+    @apply a:btn-lg;
+}

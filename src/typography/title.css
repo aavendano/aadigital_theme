@@ -1,0 +1,3 @@
+.title {
+    @apply a:text-3xl a:md:text-5xl a:font-bold;
+}

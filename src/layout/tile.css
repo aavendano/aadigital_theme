@@ -1,0 +1,3 @@
+.tile {
+    @apply a:flex a:flex-wrap;
+}

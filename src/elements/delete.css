@@ -1,0 +1,3 @@
+.delete {
+    @apply a:btn a:btn-sm a:btn-circle a:bg-base-200 a:text-error;
+}
