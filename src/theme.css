@@ -1,7 +1,6 @@
 @import "tailwindcss" prefix(a);
-
+@import './elements';
 @plugin "daisyui";
-
 @plugin "daisyui/theme" {
     name: "playlovetoys";
     default: true;
@@ -36,3 +35,8 @@
     --depth: 1;
     --noise: 1;
 }
+/* Escanea solo archivos específicos */
+@source "sections/**/*.liquid";
+@source "templates/**/*.liquid";
+@source "snippets/**/*.liquid";
+@source "src/safelist.html"; /* Tu archivo de referencia */
