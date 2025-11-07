@@ -2425,7 +2425,7 @@
     line-height: var(--tw-leading, var(--a-text-5xl--line-height));
   }
 }
-.subtitle {
+.a\:subtitle {
   font-size: var(--a-text-xl);
   line-height: var(--tw-leading, var(--a-text-xl--line-height));
   --tw-font-weight: var(--a-font-weight-semibold);
