@@ -563,12 +563,12 @@
   display: flex;
   flex-wrap: wrap;
 }
-.columns {
+.a\:columns {
   margin-inline: calc(var(--a-spacing) * -4);
   display: flex;
   flex-wrap: wrap;
 }
-.column {
+.a\:column {
   width: 100%;
   padding-inline: calc(var(--a-spacing) * 4);
 }
