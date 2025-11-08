@@ -1,3 +1,4 @@
+{{ block.shopify_attributes }}
 {% liquid
   for block in block.blocks
     render block
@@ -7,8 +8,8 @@
 {% schema %}
 {
   "name": "Group",
-  "tag": "div",
-  "class": "a:group",
+  "class": "group",
+
   "settings": [],
   "blocks": [{ "type": "@app" }, { "type": "@theme" }],
   "presets": [
