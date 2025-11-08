@@ -581,7 +581,7 @@
 .a\:column.is-fullwidth {
   width: 100%;
 }
-.a\:brick:not(:last-child) {
+.a\:group:not(:last-child) {
   margin-bottom: calc(var(--a-spacing) * 6);
   display: block;
 }
