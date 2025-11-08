@@ -1,1 +1,22 @@
-{{  }}
+{{ section.shopify_attributes }}
+{% liquid
+  for block in section.blocks
+    render block
+  endfor
+%}
+
+{% schema %}
+{
+  "name": "Section",
+  "class": "Layout",
+
+  "settings": [],
+  "blocks": [{ "type": "@app" }, { "type": "@theme" }],
+  "presets": [
+    {
+      "name": "Section",
+      "category": "Elements"
+    }
+  ]
+}
+{% endschema %}
